@@ -6,8 +6,8 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BaseUrl = "https://netenrich.opsramp.com/"
-OpsRampSecret = 'c55PPRzMPg3BWp5tXZMwwT8Gzpq6GmUbBwWnAfdhJZjmVHfXB59ZMM5rZY3kA5wf'
-OpsRampKey = 'cHrCgP3TWVtv3EwMzah3hfjH34eXUHM8'
+OpsRampSecret = ''
+OpsRampKey = ''
 
 def create_maintenance_schedule(data):
     token_url = BaseUrl + "auth/oauth/token"
@@ -58,7 +58,7 @@ def create_maintenance_schedule(data):
         print("Error message:", token_response.text)
 
 # Read input data from Excel file
-input_file = 'C:\\Users\\hari.boddu\\Downloads\\Maintenance.xlsx'  # Update with your file path
+input_file = 'Maintenance.xlsx'  # Update with your file path
 df = pd.read_excel(input_file)
 
 # Loop through the rows and call create_maintenance_schedule for each row
