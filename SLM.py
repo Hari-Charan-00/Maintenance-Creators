@@ -5,8 +5,8 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BaseUrl = "https://netenrich.opsramp.com/"
-OpsRampSecret = 'RETp4NzhXvrpUBJzhJXsfTawypEt2ZQYWNBRf9qktcDeGwPmEmFtw9KqAvChyYxW'
-OpsRampKey = 'wyJ9bKRZGzby55K5xxuxa9Dkh53RJv46'
+OpsRampSecret = ''
+OpsRampKey = ''
 
 # Function to obtain the OpsRamp API token
 def get_opsramp_token():
@@ -29,7 +29,7 @@ def get_opsramp_token():
 # Function to read the payload and client ID from the Excel file
 def read_excel_data():
     # Replace with your Excel file path
-    excel_data = pd.read_excel('C:\\Users\\hari.boddu\\Downloads\\Site-Level-Maintenance.xlsx')
+    excel_data = pd.read_excel('Site-Level-Maintenance.xlsx')
     
     # Extract client ID and payload data
     client_id = excel_data.iloc[0]['client_id']
