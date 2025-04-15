@@ -6,8 +6,8 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BaseUrl = "https://netenrich.opsramp.com/"
-OpsRampSecret = 'RETp4NzhXvrpUBJzhJXsfTawypEt2ZQYWNBRf9qktcDeGwPmEmFtw9KqAvChyYxW'
-OpsRampKey = 'wyJ9bKRZGzby55K5xxuxa9Dkh53RJv46'
+OpsRampSecret = ''
+OpsRampKey = ''
 
 def create_maintenance_schedule(data):
     success = True  # Initialize success as True
@@ -126,7 +126,7 @@ def create_maintenance_schedule(data):
 
 
 # Read data from the Excel sheet
-excel_file_path = 'C:\\Users\\hari.boddu\\Downloads\\Group_Maintenance.xlsx'
+excel_file_path = 'Group_Maintenance.xlsx'
 data = pd.read_excel(excel_file_path)
 
 # Call the function to create maintenance schedules
